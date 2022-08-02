@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  transition: all 0.5s ease;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body,
+html {
+  font-size: 62.5%;
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.to-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+p {
+  color: #c0c0c0;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.title-p {
+  color: #c0c0c0;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+h2 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 4.2rem;
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.nav-scrolled {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.testimonials img {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.testimonials img.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
